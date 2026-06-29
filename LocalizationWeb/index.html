@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Localization Converter</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" />
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+<div style="max-width:960px;margin:24px auto;padding:16px;font-family:Segoe UI,Arial">
+<h2>本地化表转JSON</h2>
+<div style="margin-bottom:12px">
+<input id="fileInput" type="file" accept=".xlsx" />
+<button id="btnParse">解析</button>
+</div>
+<div style="margin-bottom:12px">
+<label for="langSelect">选择文化</label>
+<select id="langSelect"></select>
+<button id="btnPreview">预览JSON</button>
+<button id="btnValidate">校验JSON</button>
+<button id="btnExportDir">导出到目录</button>
+<button id="btnExportAll">导出所有文化</button>
+</div>
+<div style="margin-bottom:12px">
+<textarea id="jsonOutput" style="width:100%;height:260px;font-family:Consolas,Monaco,monospace"></textarea>
+</div>
+<div style="margin-bottom:24px">
+<button id="btnDownloadTemplate">下载默认模板.xlsx</button>
+</div>
+<div id="status" style="white-space:pre-wrap;color:#333"></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
