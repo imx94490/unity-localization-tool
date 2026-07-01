@@ -38,6 +38,7 @@ string formatted = LocalizationManager.F("PlayerName", playerName);
 
 ### LocalizedText
 文本本地化组件，绑定到 Unity UI Text。
+<img width="426" height="648" alt="image" src="https://github.com/user-attachments/assets/31a7005a-1957-459a-acb2-01ae763942b5" />
 
 - 挂到 Text 节点后设置 key 值即可
 - 语言切换时自动刷新文本
@@ -45,6 +46,7 @@ string formatted = LocalizationManager.F("PlayerName", playerName);
 
 ### LocalizedImage
 图片本地化组件，绑定到 Unity UI Image。
+<img width="423" height="310" alt="image" src="https://github.com/user-attachments/assets/0b0b181c-3d37-4735-b953-c71ff2b804dd" />
 
 - 挂到 Image 节点后配置各语言 Sprite
 - 语言切换时自动切换对应图片
@@ -55,6 +57,10 @@ string formatted = LocalizationManager.F("PlayerName", playerName);
 2. 在 `Resources/Localization/` 目录下创建语言 JSON 文件（如 `zh-CN.json`）
 3. 程序入口调用 `LocalizationManager.Instance.InitializeDefaultLanguage()`
 4. UI 组件挂上对应脚本并配置 key 值
+
+## 策划使用
+使用工具LocalizationWeb下的Web工具 ，先下载到本地任意目录执行其中的.html文件
+<img width="1194" height="621" alt="image" src="https://github.com/user-attachments/assets/57405111-9e78-4d83-afe4-6bced198e9fd" />
 
 ## 语言文件格式
 
